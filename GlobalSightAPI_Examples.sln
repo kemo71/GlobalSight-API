@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSightAPITesting", "GlobalSightAPITesting.csproj", "{2C4D1621-E024-41BE-8F4F-18904917798D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSightLib", "GlobalSightLib\GlobalSightLib.csproj", "{C599B122-8EDA-47AF-989D-3EA9793DCA7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4D1621-E024-41BE-8F4F-18904917798D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Documentation|Any CPU.ActiveCfg = Documentation|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Documentation|Any CPU.Build.0 = Documentation|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C599B122-8EDA-47AF-989D-3EA9793DCA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
