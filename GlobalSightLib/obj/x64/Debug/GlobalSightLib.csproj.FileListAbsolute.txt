@@ -1,0 +1,6 @@
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\bin\x64\Debug\GlobalSightLib.dll
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\bin\x64\Debug\GlobalSightLib.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\bin\x64\Debug\GlobalSightLib.XML
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\obj\x64\Debug\GlobalSightLib.dll
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\obj\x64\Debug\GlobalSightLib.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\GlobalSightLib\obj\x64\Debug\GlobalSightLib.csprojResolveAssemblyReference.cache

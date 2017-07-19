@@ -1,0 +1,3065 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GlobalSightLib</name>
+    </assembly>
+    <members>
+        <member name="M:GlobalSightLib.GlobalSightAPI.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:GlobalSightLib.GlobalSightAPI.Login(System.String,System.String)">
+            <summary>
+            Login to GlobalSight to authenticate further API calls
+            This function must be called first
+            </summary>
+            <param name="username">GlobalSight username</param>
+            <param name="password">GlobalSight password</param>
+            <returns>An authentication code if successful, an empty string otherwise</returns>
+        </member>
+        <member name="M:GlobalSightLib.GlobalSightAPI.GetServerVersion(System.String)">
+            <summary>
+            This method is used for getting the GlobalSight server version
+            </summary>
+            <param name="AuthenticationToken">The authentication token returned from Login()</param>
+            <returns>The GlobalSight server version</returns>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.AmbassadorService">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.#ctor">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.isInstalledCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUserInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getConnectionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.loginCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getServerVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.modifyUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.acceptTaskCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.rejectTaskCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editEntryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editEntry1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editEntry2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.saveEntryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.saveEntry1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.saveEntry2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.addJobCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.discardJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.dispatchWorkflowCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.completeTaskCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.cancelJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.archiveJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getCountsByJobStateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadFile1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadFile2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getXliffFileProfileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllTMProfilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.addCommentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.updateTaskStateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.cancelWorkflowCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUserTimeZoneCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getTargetLocalesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllUsersCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobAttributeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.setJobAttributeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllProjectTMsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.isSupportCurrentLocalePairCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobNameCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobName1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadOriginalSourceFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createEditionJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.sendSegmentCommentBackCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadEditionFileBackCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.importOfflineTargetFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.helloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInformationCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllActivityTypesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllLocalePairsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsByUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createJob1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createJob2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createJobOnInitialCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadFileForInitialCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobAndWorkflowInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobExportFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobExportWorkflowFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocumentsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments_oldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.cancelJobByIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.cancelJobsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.exportWorkflowCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.exportJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getImportExportStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAcceptedTasksInWorkflowCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getCurrentTasksInWorkflowCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUserUnavailabilityReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.passDCTMAccountCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInfoExCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createDocumentumJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.cancelDocumentumJobCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getDownloadableJobsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getGSVersionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.searchEntriesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.searchEntries1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.searchEntries2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.searchEntriesInBatchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.deleteSegmentCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.deleteSegment1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.deleteSegment2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllTermbasesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.saveTBEntryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.searchTBEntriesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editTBEntryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.deleteTBEntryCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getFirstTuCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.nextTusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.nextTus1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editTuCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.editTu1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllPermissionsByUserCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getSourceLocalesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getPriorityByIDCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobId1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAttributesByProjectIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileIdCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileId1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadAttributeFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadCommentReferenceFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.importOfflineKitFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getOfflineFileUploadStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.isExistedPermissionCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchCompanyInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobIdsPerCompanyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByRangeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByStateCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByCreatorCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompanyCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany2Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoByJobsCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.fetchFileForPreviewCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getCommentFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadTmxFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.importTmxFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.jobsSkipActivityCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.taskReassignCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.jobsAddLanguagesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.jobsWorkflowCanBeAddedCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRangeCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRange1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getAllL10NProfilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getWorkflowPathCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFileCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFile1Completed">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateTranslationEditReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generatePostReviewQAReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateCharacterCountReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentSimplifiedReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateDITAQAReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.generateQAChecksReportCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getWorkOfflineFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.uploadWorkOfflineFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.importWorkOfflineFilesCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.createJobGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.addJobToGroupCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getTmExportStatusCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.exportTMCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.tmFullTextSearchCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getInContextReviewLinkCompleted">
+            <remarks/>
+        </member>
+        <member name="E:GlobalSightLib.GS_API.AmbassadorService.getUsernameFromSessionCompleted">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isInstalled">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isInstalledAsync">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isInstalledAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getConnection(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getConnectionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getConnectionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getVersion(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getVersionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getVersionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getStatus(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getStatusAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getStatusAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.login(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.loginAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.loginAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getServerVersion(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getServerVersionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getServerVersionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.modifyUser(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.modifyUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.modifyUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createUser(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createUserAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.Boolean,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.acceptTask(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.acceptTaskAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.acceptTaskAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.rejectTask(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.rejectTaskAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.rejectTaskAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry1Async(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry2Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editEntry2Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry2Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveEntry2Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobComment(System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobCommentAsync(System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobCommentAsync(System.String,System.String,System.String,System.String,System.Byte[],System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.discardJob(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.discardJobAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.discardJobAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.dispatchWorkflow(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.dispatchWorkflowAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.dispatchWorkflowAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.completeTask(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.completeTaskAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.completeTaskAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJob(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.archiveJob(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.archiveJobAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.archiveJobAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCountsByJobState(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCountsByJobStateAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCountsByJobStateAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile(System.String,System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFileAsync(System.String,System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFileAsync(System.String,System.String,System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile1Async(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile1Async(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile2Async(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFile2Async(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getXliffFileProfile(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getXliffFileProfileAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getXliffFileProfileAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTMProfiles(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTMProfilesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTMProfilesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addComment(System.String,System.Int64,System.Int32,System.String,System.String,System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addCommentAsync(System.String,System.Int64,System.Int32,System.String,System.String,System.Byte[],System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addCommentAsync(System.String,System.Int64,System.Int32,System.String,System.String,System.Byte[],System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.updateTaskState(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.updateTaskStateAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.updateTaskStateAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelWorkflow(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelWorkflowAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelWorkflowAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserTimeZone(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserTimeZoneAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserTimeZoneAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTargetLocales(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTargetLocalesAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTargetLocalesAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllUsers(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllUsersAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllUsersAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAttribute(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAttributeAsync(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAttributeAsync(System.String,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.setJobAttribute(System.String,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.setJobAttributeAsync(System.String,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.setJobAttributeAsync(System.String,System.Int64,System.String,System.Object,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjects(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectTMs(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectTMsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectTMsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isSupportCurrentLocalePair(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isSupportCurrentLocalePairAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isSupportCurrentLocalePairAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobName(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobNameAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobNameAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobName(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobName1Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUniqueJobName1Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadOriginalSourceFile(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadOriginalSourceFileAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadOriginalSourceFileAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createEditionJob(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createEditionJobAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createEditionJobAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.sendSegmentCommentBack(System.String,GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.sendSegmentCommentBackAsync(System.String,GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.sendSegmentCommentBackAsync(System.String,GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadEditionFileBack(System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadEditionFileBackAsync(System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadEditionFileBackAsync(System.String,System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineTargetFiles(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineTargetFilesAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineTargetFilesAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.helloWorld">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.helloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.helloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInformation(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInformationAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInformationAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllActivityTypes(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllActivityTypesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllActivityTypesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllLocalePairs(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllLocalePairsAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllLocalePairsAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsByUser(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsByUserAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllProjectsByUserAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob1Async(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob2Async(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJob2Async(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobOnInitial(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobOnInitialAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobOnInitialAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFileForInitial(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFileForInitialAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadFileForInitialAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAndWorkflowInfo(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAndWorkflowInfoAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobAndWorkflowInfoAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobStatus(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobStatusAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobStatusAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportFiles(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportFilesAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportFilesAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportWorkflowFiles(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportWorkflowFilesAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobExportWorkflowFilesAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocumentsAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocumentsAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments1Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments1Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments_old(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments_oldAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getLocalizedDocuments_oldAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobById(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobByIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobByIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobs(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelJobsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportWorkflow(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportWorkflowAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportWorkflowAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportJob(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportJobAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportJobAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getImportExportStatus(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getImportExportStatusAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getImportExportStatusAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAcceptedTasksInWorkflow(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAcceptedTasksInWorkflowAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAcceptedTasksInWorkflowAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCurrentTasksInWorkflow(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCurrentTasksInWorkflowAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCurrentTasksInWorkflowAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJob(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobAsync(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobAsync(System.String,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobs(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobsAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTasksInJobsAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserUnavailabilityReport(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserUnavailabilityReportAsync(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUserUnavailabilityReportAsync(System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.passDCTMAccount(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.passDCTMAccountAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.passDCTMAccountAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInfoEx(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInfoExAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFileProfileInfoExAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createDocumentumJob(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createDocumentumJobAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createDocumentumJobAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelDocumentumJob(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelDocumentumJobAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.cancelDocumentumJobAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getDownloadableJobs(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getDownloadableJobsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getDownloadableJobsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getGSVersion(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getGSVersionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getGSVersionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntriesAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntriesAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries(System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries1Async(System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries1Async(System.String,System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries2Async(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntries2Async(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntriesInBatch(System.String,System.Int64,GlobalSightLib.GS_API.Map,System.Int64,GlobalSightLib.GS_API.Map,System.Boolean,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntriesInBatchAsync(System.String,System.Int64,GlobalSightLib.GS_API.Map,System.Int64,GlobalSightLib.GS_API.Map,System.Boolean,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchEntriesInBatchAsync(System.String,System.Int64,GlobalSightLib.GS_API.Map,System.Int64,GlobalSightLib.GS_API.Map,System.Boolean,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegmentAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegmentAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment1Async(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment1Async(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment2Async(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteSegment2Async(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTermbases(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTermbasesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllTermbasesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveTBEntry(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveTBEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.saveTBEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchTBEntries(System.String,System.String,System.String,System.String,System.String,System.Double)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchTBEntriesAsync(System.String,System.String,System.String,System.String,System.String,System.Double)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.searchTBEntriesAsync(System.String,System.String,System.String,System.String,System.String,System.Double,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTBEntry(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTBEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTBEntryAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Object,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteTBEntry(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteTBEntryAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.deleteTBEntryAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFirstTu(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFirstTuAsync(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getFirstTuAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTus(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTusAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTusAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTus(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTus1Async(System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.nextTus1Async(System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTu(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTuAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTuAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTu(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTu1Async(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.editTu1Async(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllPermissionsByUser(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllPermissionsByUserAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllPermissionsByUserAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getSourceLocales(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getSourceLocalesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getSourceLocalesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getPriorityByID(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getPriorityByIDAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getPriorityByIDAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobId(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobId1Async(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByJobId1Async(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByProjectId(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByProjectIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAttributesByProjectIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileId(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileIdAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileIdAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileId1Async(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getProjectIdByFileProfileId1Async(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadAttributeFiles(System.String,System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadAttributeFilesAsync(System.String,System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadAttributeFilesAsync(System.String,System.String,System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadCommentReferenceFiles(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadCommentReferenceFilesAsync(GlobalSightLib.GS_API.Map)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadCommentReferenceFilesAsync(GlobalSightLib.GS_API.Map,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineKitFiles(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineKitFilesAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importOfflineKitFilesAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getOfflineFileUploadStatus(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getOfflineFileUploadStatusAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getOfflineFileUploadStatusAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isExistedPermission(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isExistedPermissionAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.isExistedPermissionAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchCompanyInfo(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchCompanyInfoAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchCompanyInfoAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobIdsPerCompany(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobIdsPerCompanyAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobIdsPerCompanyAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByRange(System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByRangeAsync(System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByRangeAsync(System.String,System.Int32,System.Int32,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByState(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByStateAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByStateAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByCreator(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByCreatorAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsByCreatorAsync(System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompanyAsync(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompanyAsync(System.String,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany1Async(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany1Async(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany(System.String,System.String[],System.Boolean,System.Boolean,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany2Async(System.String,System.String[],System.Boolean,System.Boolean,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchJobsPerCompany2Async(System.String,System.String[],System.Boolean,System.Boolean,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfo(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoByJobs(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoByJobsAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchWorkflowRelevantInfoByJobsAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchFileForPreview(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchFileForPreviewAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.fetchFileForPreviewAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCommentFiles(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCommentFilesAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getCommentFilesAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadTmxFile(System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadTmxFileAsync(System.String,System.String,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadTmxFileAsync(System.String,System.String,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importTmxFile(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importTmxFileAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importTmxFileAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsSkipActivity(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsSkipActivityAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsSkipActivityAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.taskReassign(System.String,System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.taskReassignAsync(System.String,System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.taskReassignAsync(System.String,System.String,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsAddLanguages(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsAddLanguagesAsync(System.String,System.Int64,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsAddLanguagesAsync(System.String,System.Int64,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsWorkflowCanBeAdded(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsWorkflowCanBeAddedAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.jobsWorkflowCanBeAddedAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRange(System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRangeAsync(System.String,System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRangeAsync(System.String,System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRange(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRange1Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getJobsByTimeRange1Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllL10NProfiles(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllL10NProfilesAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getAllL10NProfilesAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkflowPath(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkflowPathAsync(System.String,System.Int64)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkflowPathAsync(System.String,System.Int64,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFile(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFileAsync(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFileAsync(System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFile(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFile1Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.downloadXliffOfflineFile1Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateTranslationEditReport(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateTranslationEditReportAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateTranslationEditReportAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generatePostReviewQAReport(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generatePostReviewQAReportAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generatePostReviewQAReportAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateCharacterCountReport(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateCharacterCountReportAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateCharacterCountReportAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentReport(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentReportAsync(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentReportAsync(System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentSimplifiedReport(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentSimplifiedReportAsync(System.String,System.String,System.String,System.Boolean)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateReviewersCommentSimplifiedReportAsync(System.String,System.String,System.String,System.Boolean,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateDITAQAReport(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateDITAQAReportAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateDITAQAReportAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateQAChecksReport(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateQAChecksReportAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.generateQAChecksReportAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkOfflineFiles(System.String,System.Int64,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkOfflineFilesAsync(System.String,System.Int64,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getWorkOfflineFilesAsync(System.String,System.Int64,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadWorkOfflineFiles(System.String,System.Int64,System.Int32,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadWorkOfflineFilesAsync(System.String,System.Int64,System.Int32,System.String,System.Byte[])">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.uploadWorkOfflineFilesAsync(System.String,System.Int64,System.Int32,System.String,System.Byte[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importWorkOfflineFiles(System.String,System.Int64,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importWorkOfflineFilesAsync(System.String,System.Int64,System.String,System.Int32)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.importWorkOfflineFilesAsync(System.String,System.Int64,System.String,System.Int32,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobGroup(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobGroupAsync(System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.createJobGroupAsync(System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobToGroup(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobToGroupAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.addJobToGroupAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTmExportStatus(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTmExportStatusAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getTmExportStatusAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportTM(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportTMAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.exportTMAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.tmFullTextSearch(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.tmFullTextSearchAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.tmFullTextSearchAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getInContextReviewLink(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getInContextReviewLinkAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getInContextReviewLinkAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUsernameFromSession(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUsernameFromSessionAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.getUsernameFromSessionAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:GlobalSightLib.GS_API.AmbassadorService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.Map">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.Map.item">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.mapItem">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.mapItem.key">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.mapItem.value">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.WebServiceException">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isInstalledCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isInstalledCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.isInstalledCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUserInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getConnectionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getConnectionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getConnectionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getVersionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getVersionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.loginCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.loginCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.loginCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getServerVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getServerVersionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getServerVersionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.modifyUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.modifyUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.modifyUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.createUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.acceptTaskCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.acceptTaskCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.acceptTaskCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.rejectTaskCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.rejectTaskCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.rejectTaskCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editEntryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editEntry1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editEntry2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveEntryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveEntry1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveEntry1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.saveEntry1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveEntry2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveEntry2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.saveEntry2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addJobCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addJobCommentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.addJobCommentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.discardJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.dispatchWorkflowCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.dispatchWorkflowCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.dispatchWorkflowCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.completeTaskCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.completeTaskCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.completeTaskCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.cancelJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.archiveJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.archiveJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.archiveJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCountsByJobStateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCountsByJobStateCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getCountsByJobStateCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadFile1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadFile2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getXliffFileProfileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getXliffFileProfileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getXliffFileProfileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllTMProfilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllTMProfilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllTMProfilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addCommentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addCommentCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.addCommentCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.updateTaskStateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelWorkflowCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelWorkflowCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.cancelWorkflowCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserTimeZoneCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserTimeZoneCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUserTimeZoneCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTargetLocalesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTargetLocalesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getTargetLocalesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllUsersCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllUsersCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllUsersCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobAttributeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobAttributeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobAttributeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.setJobAttributeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllProjectsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectTMsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectTMsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllProjectTMsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isSupportCurrentLocalePairCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isSupportCurrentLocalePairCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.isSupportCurrentLocalePairCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUniqueJobNameCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUniqueJobNameCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUniqueJobNameCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUniqueJobName1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUniqueJobName1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUniqueJobName1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadOriginalSourceFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadOriginalSourceFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadOriginalSourceFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createEditionJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.sendSegmentCommentBackCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadEditionFileBackCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadEditionFileBackCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadEditionFileBackCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importOfflineTargetFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importOfflineTargetFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.importOfflineTargetFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.helloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.helloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.helloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFileProfileInformationCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFileProfileInformationCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getFileProfileInformationCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllActivityTypesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllActivityTypesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllActivityTypesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllLocalePairsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllLocalePairsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllLocalePairsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectsByUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllProjectsByUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllProjectsByUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJob1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJob2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJobOnInitialCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadFileForInitialCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadFileForInitialCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadFileForInitialCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobAndWorkflowInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobAndWorkflowInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobAndWorkflowInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobExportFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobExportFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobExportFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobExportWorkflowFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobExportWorkflowFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobExportWorkflowFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocumentsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocumentsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getLocalizedDocumentsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocuments1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocuments1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getLocalizedDocuments1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocuments_oldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getLocalizedDocuments_oldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getLocalizedDocuments_oldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobByIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobByIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.cancelJobByIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelJobsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.cancelJobsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportWorkflowCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportWorkflowCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.exportWorkflowCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.exportJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getImportExportStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getImportExportStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getImportExportStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAcceptedTasksInWorkflowCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAcceptedTasksInWorkflowCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAcceptedTasksInWorkflowCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCurrentTasksInWorkflowCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCurrentTasksInWorkflowCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getCurrentTasksInWorkflowCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTasksInJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTasksInJobCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getTasksInJobCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTasksInJobsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTasksInJobsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getTasksInJobsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserUnavailabilityReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUserUnavailabilityReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUserUnavailabilityReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.passDCTMAccountCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.passDCTMAccountCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.passDCTMAccountCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFileProfileInfoExCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFileProfileInfoExCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getFileProfileInfoExCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createDocumentumJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.cancelDocumentumJobCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getDownloadableJobsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getDownloadableJobsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getDownloadableJobsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getGSVersionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getGSVersionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getGSVersionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntriesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntriesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.searchEntriesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntries1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntries1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.searchEntries1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntries2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntries2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.searchEntries2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntriesInBatchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchEntriesInBatchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.searchEntriesInBatchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.deleteSegmentCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.deleteSegment1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.deleteSegment2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllTermbasesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllTermbasesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllTermbasesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.saveTBEntryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchTBEntriesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.searchTBEntriesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.searchTBEntriesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editTBEntryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.deleteTBEntryCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFirstTuCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getFirstTuCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getFirstTuCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.nextTusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.nextTusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.nextTusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.nextTus1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.nextTus1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.nextTus1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editTuCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editTuCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.editTuCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editTu1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.editTu1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.editTu1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllPermissionsByUserCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllPermissionsByUserCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllPermissionsByUserCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getSourceLocalesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getSourceLocalesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getSourceLocalesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getPriorityByIDCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getPriorityByIDCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getPriorityByIDCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByJobIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByJobIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAttributesByJobIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByJobId1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByJobId1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAttributesByJobId1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByProjectIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAttributesByProjectIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAttributesByProjectIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getProjectIdByFileProfileIdCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getProjectIdByFileProfileIdCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getProjectIdByFileProfileIdCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getProjectIdByFileProfileId1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getProjectIdByFileProfileId1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getProjectIdByFileProfileId1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadAttributeFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadCommentReferenceFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadCommentReferenceFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadCommentReferenceFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importOfflineKitFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importOfflineKitFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.importOfflineKitFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getOfflineFileUploadStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getOfflineFileUploadStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getOfflineFileUploadStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isExistedPermissionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.isExistedPermissionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.isExistedPermissionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchCompanyInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchCompanyInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchCompanyInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobIdsPerCompanyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobIdsPerCompanyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobIdsPerCompanyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByRangeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByRangeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsByRangeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByStateCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByStateCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsByStateCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByCreatorCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsByCreatorCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsByCreatorCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompanyCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompanyCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsPerCompanyCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompany1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompany1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsPerCompany1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompany2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchJobsPerCompany2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchJobsPerCompany2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoByJobsCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoByJobsCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchWorkflowRelevantInfoByJobsCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchFileForPreviewCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.fetchFileForPreviewCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.fetchFileForPreviewCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCommentFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getCommentFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getCommentFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadTmxFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadTmxFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadTmxFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importTmxFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsSkipActivityCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsSkipActivityCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.jobsSkipActivityCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.taskReassignCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.taskReassignCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.taskReassignCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsAddLanguagesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsAddLanguagesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.jobsAddLanguagesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsWorkflowCanBeAddedCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.jobsWorkflowCanBeAddedCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.jobsWorkflowCanBeAddedCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobsByTimeRangeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobsByTimeRangeCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobsByTimeRangeCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobsByTimeRange1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getJobsByTimeRange1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getJobsByTimeRange1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllL10NProfilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getAllL10NProfilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getAllL10NProfilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getWorkflowPathCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getWorkflowPathCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getWorkflowPathCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.downloadXliffOfflineFileCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.downloadXliffOfflineFileCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.downloadXliffOfflineFileCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.downloadXliffOfflineFile1CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.downloadXliffOfflineFile1CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.downloadXliffOfflineFile1CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateTranslationEditReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateTranslationEditReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateTranslationEditReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generatePostReviewQAReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generatePostReviewQAReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generatePostReviewQAReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateCharacterCountReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateCharacterCountReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateCharacterCountReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateReviewersCommentReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateReviewersCommentReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateReviewersCommentReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateReviewersCommentSimplifiedReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateReviewersCommentSimplifiedReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateReviewersCommentSimplifiedReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateDITAQAReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateDITAQAReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateDITAQAReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateQAChecksReportCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.generateQAChecksReportCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.generateQAChecksReportCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getWorkOfflineFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getWorkOfflineFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getWorkOfflineFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadWorkOfflineFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.uploadWorkOfflineFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.uploadWorkOfflineFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importWorkOfflineFilesCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.importWorkOfflineFilesCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.importWorkOfflineFilesCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJobGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.createJobGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.createJobGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addJobToGroupCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.addJobToGroupCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.addJobToGroupCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTmExportStatusCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getTmExportStatusCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getTmExportStatusCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportTMCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.exportTMCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.exportTMCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.tmFullTextSearchCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.tmFullTextSearchCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.tmFullTextSearchCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getInContextReviewLinkCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getInContextReviewLinkCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getInContextReviewLinkCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUsernameFromSessionCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:GlobalSightLib.GS_API.getUsernameFromSessionCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:GlobalSightLib.GS_API.getUsernameFromSessionCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\GlobalSightAPITesting.exe
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\GlobalSightAPITesting.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\GlobalSightLib.dll
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\GlobalSightLib.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\GlobalSightLib.xml
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\x64\Debug\GlobalSightAPITesting.csprojResolveAssemblyReference.cache
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\x64\Debug\GlobalSightAPITesting.exe
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\x64\Debug\GlobalSightAPITesting.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\x64\Debug\Newtonsoft.Json.xml

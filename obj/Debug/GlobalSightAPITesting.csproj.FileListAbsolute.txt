@@ -1,0 +1,8 @@
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\Debug\GlobalSightAPITesting.exe
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\Debug\GlobalSightAPITesting.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\Debug\GlobalSightLib.dll
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\Debug\GlobalSightLib.pdb
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\bin\Debug\GlobalSightLib.xml
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\Debug\GlobalSightAPITesting.csprojResolveAssemblyReference.cache
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\Debug\GlobalSightAPITesting.exe
+C:\Users\m.alabdalkarim\Source\Repos\GlobalSight-API\obj\Debug\GlobalSightAPITesting.pdb
